@@ -13,7 +13,7 @@ def main():
 def check_server_response_time(url, max_response_time, num_of_checks):
     for i in range(num_of_checks):
         response_time = get_response_time(url)
-
+        ## If there was an error
         if response_time == -1:
             return
 
